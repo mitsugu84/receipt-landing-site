@@ -4,20 +4,25 @@
   <meta charset="UTF-8">
   <title>領収書まとめる君｜月末の2時間を500円で買い戻そう</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="月末の領収書整理をもっとラクに。領収書やレシートをスマホで撮るだけで、AIが読み取って経費Excelにまとめる個人事業主向けサービスです。">
+  <meta name="description" content="月末の領収書整理をもっとラクに。領収書やレシートをスマホで撮るだけで、AIが読み取って経費Excelにまとめる個人事業主・一人親方・事務担当向けサービスです。">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="site-header">
   <div class="container header-inner">
-    <div class="logo">領収書まとめる君</div>
-    <nav>
+    <div class="brand">
+      <a href="#" class="logo">領収書まとめる君</a>
+      <span class="header-badge">仕事ラクラクシリーズ 第一弾</span>
+    </div>
+
+    <nav class="nav">
       <a href="#features">できること</a>
       <a href="#howto">使い方</a>
       <a href="#price">料金</a>
       <a href="#faq">FAQ</a>
       <a href="#feedback">ご意見箱</a>
+      <a class="nav-button" href="https://receipt-server-1.onrender.com" target="_blank" rel="noopener noreferrer">β版を試す</a>
     </nav>
   </div>
 </header>
@@ -26,11 +31,13 @@
   <section class="hero">
     <div class="container hero-inner">
       <div class="hero-text">
+        <h2 class="service-name">領収書まとめる君</h2>
+
         <p class="badge">仕事ラクラクシリーズ 第一弾</p>
 
         <h1>
           月末の2時間を、<br>
-          500円で買い戻そう。
+          <span class="blue">500円</span>で買い戻そう。
         </h1>
 
         <p class="lead">
@@ -38,12 +45,12 @@
           AIが読み取って、経費Excelにまとめます。
         </p>
 
-        <p class="lead">
+        <p class="sublead">
           月末のレシート整理に時間を使いたくない個人事業主・一人親方・事務担当の方のための、シンプルな経費整理サービスです。
         </p>
 
         <div class="actions">
-          <a class="btn primary" href="https://receipt-server-1.onrender.com" target="_blank">β版を試す</a>
+          <a class="btn primary" href="https://receipt-server-1.onrender.com" target="_blank" rel="noopener noreferrer">β版を試す</a>
           <a class="btn secondary" href="#howto">使い方を見る</a>
         </div>
 
@@ -52,42 +59,50 @@
 
       <div class="hero-card">
         <div class="mock-title">Excel出力イメージ</div>
-        <table>
-          <tr>
-            <th>日付</th>
-            <th>店名</th>
-            <th>金額</th>
-            <th>区分</th>
-          </tr>
-          <tr>
-            <td>2026-06-07</td>
-            <td>ジョリーパスタ</td>
-            <td>4,279円</td>
-            <td>食費</td>
-          </tr>
-          <tr>
-            <td>2026-06-07</td>
-            <td>WORKMAN</td>
-            <td>580円</td>
-            <td>工具費</td>
-          </tr>
-          <tr>
-            <td>2026-06-01</td>
-            <td>AEON</td>
-            <td>9,960円</td>
-            <td>食費</td>
-          </tr>
-        </table>
+
+        <div class="table-wrap">
+          <table>
+            <tr>
+              <th>日付</th>
+              <th>店名</th>
+              <th>金額</th>
+              <th>区分</th>
+            </tr>
+            <tr>
+              <td>2026-06-07</td>
+              <td>ジョリーパスタ</td>
+              <td>4,279円</td>
+              <td>食費</td>
+            </tr>
+            <tr>
+              <td>2026-06-07</td>
+              <td>WORKMAN</td>
+              <td>580円</td>
+              <td>工具費</td>
+            </tr>
+            <tr>
+              <td>2026-06-01</td>
+              <td>AEON</td>
+              <td>9,960円</td>
+              <td>食費</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="scroll-bar">
+          <span></span>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="features" class="section">
+  <section id="features" class="section features-section">
     <div class="container">
       <h2>できること</h2>
 
       <div class="grid">
         <div class="card">
+          <div class="icon blue-icon">📱</div>
           <h3>スマホで撮るだけ</h3>
           <p>
             レシートや領収書の写真をアップロードするだけで読み取りできます。
@@ -95,6 +110,7 @@
         </div>
 
         <div class="card">
+          <div class="icon green-icon">📄</div>
           <h3>Excelに自動整理</h3>
           <p>
             日付・店名・金額・区分をまとめたExcelを自動作成します。
@@ -102,6 +118,7 @@
         </div>
 
         <div class="card">
+          <div class="icon purple-icon">📊</div>
           <h3>区分集計つき</h3>
           <p>
             食費・工具費・交通費など、区分ごとの合計も確認できます。
@@ -144,13 +161,13 @@
       <h2>料金予定</h2>
 
       <div class="price-box">
-        <div>
+        <div class="price-card">
           <h3>無料版</h3>
           <p class="price">0円</p>
           <p>月20枚まで利用可能予定</p>
         </div>
 
-        <div>
+        <div class="price-card featured">
           <h3>有料版</h3>
           <p class="price">月500円予定</p>
           <p>月100枚〜300枚程度を検討中</p>
@@ -201,9 +218,10 @@
             使いにくかった所、欲しい機能、読み取りミス、改善要望などを気軽に教えてください。
           </p>
           <a
-            class="btn primary"
+            class="btn primary small-btn"
             href="https://docs.google.com/forms/d/e/1FAIpQLSedqfg8UZqlXi5YWsH08BMr3XCcpcvmxO1xk-tds7yBh6k9lQ/viewform?usp=header"
             target="_blank"
+            rel="noopener noreferrer"
           >
             ご意見箱を開く
           </a>
@@ -215,9 +233,10 @@
             領収書以外にも、面倒な事務作業があれば教えてください。次のサービス開発の参考にします。
           </p>
           <a
-            class="btn primary"
+            class="btn primary small-btn"
             href="https://docs.google.com/forms/d/e/1FAIpQLSd0XexupanZKV3qzjEIa8AIZnr2k314BljfOZZf71OvbCvkEA/viewform?usp=publish-editor"
             target="_blank"
+            rel="noopener noreferrer"
           >
             アンケートに答える
           </a>
@@ -232,7 +251,7 @@
       <p>
         写真を選んでExcelができるところまで試せます。
       </p>
-      <a class="btn primary" href="https://receipt-server-1.onrender.com" target="_blank">β版を試す</a>
+      <a class="btn primary" href="https://receipt-server-1.onrender.com" target="_blank" rel="noopener noreferrer">β版を試す</a>
     </div>
   </section>
 </main>
