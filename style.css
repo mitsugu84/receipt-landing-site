@@ -52,7 +52,7 @@ a{
 }
 
 .logo{
-    font-size:42px;
+    font-size:32px;
     font-weight:900;
     color:#2563eb;
 }
@@ -69,7 +69,7 @@ a{
 .nav{
     display:flex;
     align-items:center;
-    gap:32px;
+    gap:24px;
 }
 
 .nav a{
@@ -79,9 +79,9 @@ a{
 
 .nav-button{
     background:#2563eb;
-    color:white !important;
-    padding:14px 24px;
-    border-radius:14px;
+    color:#fff !important;
+    padding:12px 20px;
+    border-radius:12px;
     font-weight:700;
 }
 
@@ -102,32 +102,20 @@ a{
 
 .hero-text{
     flex:1;
-}
-
-.service-name{
-    font-size:56px;
-    font-weight:900;
-    color:#2563eb;
-    margin-bottom:10px;
-}
-
-.badge{
-    display:inline-block;
-    background:#eaf2ff;
-    color:#2563eb;
-    padding:10px 18px;
-    border-radius:999px;
-    font-size:14px;
-    font-weight:700;
-    margin-bottom:25px;
+    max-width:780px;
 }
 
 .hero h1{
-    font-size:78px;
-    line-height:1.1;
+    font-size:72px;
+    line-height:1.15;
     font-weight:900;
     margin-bottom:28px;
     color:#0f172a;
+    letter-spacing:-0.04em;
+}
+
+.headline-line{
+    white-space:nowrap;
 }
 
 .blue{
@@ -137,13 +125,13 @@ a{
 .lead{
     font-size:22px;
     color:#334155;
-    margin-bottom:20px;
+    margin-bottom:18px;
 }
 
 .sublead{
     font-size:18px;
-    color:#475569;
-    margin-bottom:36px;
+    color:#64748b;
+    margin-bottom:34px;
 }
 
 .actions{
@@ -159,7 +147,7 @@ a{
     padding:18px 30px;
     border-radius:14px;
     font-weight:700;
-    transition:0.2s;
+    transition:.2s;
 }
 
 .btn:hover{
@@ -168,18 +156,18 @@ a{
 
 .btn.primary{
     background:#2563eb;
-    color:white;
+    color:#fff;
 }
 
 .btn.secondary{
-    background:white;
+    background:#fff;
     color:#0f172a;
     border:2px solid #dbe4f0;
 }
 
 .note{
-    color:#64748b;
     font-size:14px;
+    color:#64748b;
 }
 
 /* ======================
@@ -188,14 +176,14 @@ a{
 
 .hero-card{
     flex:1;
-    background:white;
+    background:#fff;
     border-radius:24px;
     padding:24px;
-    box-shadow:0 20px 50px rgba(37,99,235,0.10);
+    box-shadow:0 20px 50px rgba(37,99,235,.10);
 }
 
 .mock-title{
-    font-size:28px;
+    font-size:24px;
     font-weight:800;
     margin-bottom:18px;
 }
@@ -221,8 +209,8 @@ a{
 }
 
 .scroll-bar{
-    margin-top:16px;
-    height:10px;
+    margin-top:14px;
+    height:8px;
     background:#d1d5db;
     border-radius:999px;
 }
@@ -234,7 +222,6 @@ a{
     background:#6b7280;
     border-radius:999px;
 }
-
 /* ======================
    SECTION
 ====================== */
@@ -251,7 +238,7 @@ a{
 }
 
 .light{
-    background:white;
+    background:#fff;
 }
 
 /* ======================
@@ -265,14 +252,15 @@ a{
 }
 
 .card{
-    background:white;
+    background:#fff;
     border-radius:24px;
     padding:30px;
     border:1px solid #e5e7eb;
+    box-shadow:0 10px 30px rgba(15,23,42,.04);
 }
 
 .card h3{
-    font-size:28px;
+    font-size:26px;
     margin-bottom:12px;
 }
 
@@ -314,10 +302,11 @@ a{
 }
 
 .step{
-    background:white;
+    background:#fff;
     padding:24px;
     border-radius:20px;
     text-align:center;
+    border:1px solid #e5e7eb;
 }
 
 .step span{
@@ -325,7 +314,7 @@ a{
     height:50px;
     border-radius:50%;
     background:#2563eb;
-    color:white;
+    color:#fff;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -344,15 +333,16 @@ a{
 }
 
 .price-card{
-    background:white;
+    background:#fff;
     padding:40px;
     border-radius:24px;
     border:1px solid #e5e7eb;
     text-align:center;
 }
 
-.featured{
+.price-card.featured{
     border:3px solid #2563eb;
+    box-shadow:0 20px 50px rgba(37,99,235,.10);
 }
 
 .price{
@@ -367,15 +357,21 @@ a{
 ====================== */
 
 details{
-    background:white;
+    background:#fff;
     border-radius:16px;
     padding:20px;
     margin-bottom:16px;
+    border:1px solid #e5e7eb;
 }
 
 summary{
     cursor:pointer;
     font-weight:700;
+}
+
+details p{
+    color:#475569;
+    margin-top:12px;
 }
 
 /* ======================
@@ -388,6 +384,7 @@ summary{
 
 .cta p{
     margin:20px 0 30px;
+    color:#475569;
 }
 
 /* ======================
@@ -395,7 +392,7 @@ summary{
 ====================== */
 
 .footer{
-    background:white;
+    background:#fff;
     border-top:1px solid #e5e7eb;
     padding:30px 0;
 }
@@ -422,22 +419,45 @@ summary{
         gap:20px;
     }
 
+    .brand{
+        justify-content:center;
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
     .nav{
         flex-wrap:wrap;
         justify-content:center;
-        gap:15px;
+        gap:14px;
+    }
+
+    .nav-button{
+        padding:10px 16px;
+    }
+
+    .hero{
+        padding:56px 0;
     }
 
     .hero-inner{
         flex-direction:column;
+        gap:40px;
     }
 
-    .service-name{
-        font-size:38px;
+    .hero-text{
+        max-width:100%;
     }
 
     .hero h1{
-        font-size:48px;
+        font-size:42px;
+        line-height:1.25;
+        letter-spacing:-0.03em;
+    }
+
+    .headline-line{
+        white-space:normal;
     }
 
     .lead{
@@ -446,6 +466,23 @@ summary{
 
     .sublead{
         font-size:16px;
+    }
+
+    .actions{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .section{
+        padding:70px 0;
+    }
+
+    .section h2{
+        font-size:36px;
+        margin-bottom:34px;
     }
 
     .grid{
@@ -460,16 +497,52 @@ summary{
         grid-template-columns:1fr;
     }
 
-    .actions{
-        flex-direction:column;
-    }
-
     .footer-inner{
         flex-direction:column;
         gap:15px;
+        text-align:center;
     }
 
-    .section h2{
-        font-size:36px;
+    .footer a{
+        margin:0 10px;
+    }
+}
+
+@media(max-width:520px){
+
+    .container{
+        padding:0 16px;
+    }
+
+    .header-badge{
+        font-size:12px;
+        padding:6px 12px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .hero-card{
+        padding:18px;
+        border-radius:20px;
+    }
+
+    .mock-title{
+        font-size:20px;
+    }
+
+    .hero-card th,
+    .hero-card td{
+        padding:10px;
+        font-size:13px;
+    }
+
+    .card h3{
+        font-size:22px;
+    }
+
+    .price{
+        font-size:34px;
     }
 }
