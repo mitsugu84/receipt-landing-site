@@ -613,3 +613,14 @@ details p{
         font-size:28px;
     }
 }
+.action-item{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.button-note{
+    margin-top:8px;
+    font-size:13px;
+    color:#64748b;
+}
