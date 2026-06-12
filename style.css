@@ -736,26 +736,26 @@ details p{
 
 /* STEP1：ファイル選択ボタン */
 .finger-file {
-  left: 40%;
-  top: 45%;
+  left: 35%;
+  top: 40%;
 }
 
 /* STEP2：解析してExcelを作成ボタン */
 .finger-analyze {
-  left: 45%;
-  bottom: 5%;
+  left: 40%;
+  bottom: 8%;
 }
 
 /* STEP4：続けてアップロードボタン */
 .finger-continue {
   left: 50%;
-  bottom: 0%;
+  bottom: 3%;
 }
 
 /* STEP5：Excelをダウンロードボタン */
 .finger-excel {
   left: 50%;
-  bottom: 13%;
+  bottom: 11%;
 }
 
 @media (max-width: 900px) {
