@@ -727,30 +727,34 @@ details p{
 
 .finger {
   position: absolute;
-  font-size: 44px;
+  font-size: 46px;
   transform: rotate(-25deg);
   filter: drop-shadow(0 4px 6px rgba(0,0,0,.18));
   z-index: 3;
   pointer-events: none;
 }
 
+/* STEP1：ファイル選択ボタン */
 .finger-file {
-  left: 26%;
-  top: 47%;
-}
-
-.finger-analyze {
   left: 31%;
-  bottom: 19%;
+  top: 36%;
 }
 
-.finger-continue {
-  left: 57%;
+/* STEP2：解析してExcelを作成ボタン */
+.finger-analyze {
+  left: 32%;
   bottom: 18%;
 }
 
+/* STEP4：続けてアップロードボタン */
+.finger-continue {
+  left: 52%;
+  bottom: 18%;
+}
+
+/* STEP5：Excelをダウンロードボタン */
 .finger-excel {
-  left: 24%;
+  left: 23%;
   bottom: 18%;
 }
 
