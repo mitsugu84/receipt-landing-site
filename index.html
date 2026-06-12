@@ -9,6 +9,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="領収書やレシートをスマホで撮るだけ。AIが読み取って経費Excelにまとめるβテスト公開中のサービスです。ご意見・ご要望を募集中です。">
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    .howto-image-grid {
+      display: grid;
+      gap: 28px;
+      margin-top: 28px;
+    }
+
+    .howto-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 22px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e5e7eb;
+    }
+
+    .howto-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .howto-card p {
+      color: #475569;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+
+    .howto-shot {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid #dbe3ef;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+      background: #f8fafc;
+    }
+
+    .mini-note {
+      margin-top: 12px;
+      padding: 12px 14px;
+      background: #fff7ed;
+      color: #9a3412;
+      border: 1px solid #fed7aa;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .simple-flow {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .simple-flow div {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 14px;
+      padding: 14px;
+      text-align: center;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    @media (max-width: 800px) {
+      .simple-flow {
+        grid-template-columns: 1fr;
+      }
+
+      .howto-card {
+        padding: 16px;
+      }
+
+      .howto-card h3 {
+        font-size: 19px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -48,7 +126,6 @@
 
         <p class="sublead">
           現在βテスト中のため、無料でご利用いただけます。<br>
-          皆さまのご意見をもとに正式版を開発しています。<br>
           不具合・読み取りミス・欲しい機能などのご意見を募集しています。
         </p>
 
@@ -93,7 +170,7 @@
               <td>工具費</td>
             </tr>
             <tr>
-              <td>2026-06-01</td>
+              <td>不明</td>
               <td>AEON</td>
               <td>9,960円</td>
               <td>食費</td>
@@ -116,7 +193,7 @@
         <div class="card">
           <div class="icon blue-icon">📱</div>
           <h3>スマホで撮るだけ</h3>
-          <p>レシートや領収書の写真をアップロードするだけで読み取りできます。</p>
+          <p>レシートや領収書の写真を撮影、または写真から選択できます。</p>
         </div>
 
         <div class="card">
@@ -126,9 +203,9 @@
         </div>
 
         <div class="card">
-          <div class="icon purple-icon">📊</div>
-          <h3>区分集計つき</h3>
-          <p>食費・工具費・交通費など、区分ごとの合計も確認できます。</p>
+          <div class="icon purple-icon">➕</div>
+          <h3>続けて追加できる</h3>
+          <p>追加の領収書がある場合も、続けてアップロードしてまとめられます。</p>
         </div>
       </div>
     </div>
@@ -138,11 +215,62 @@
     <div class="container">
       <h2>使い方</h2>
 
-      <div class="steps">
-        <div class="step"><span>1</span><p>スマホでサイトを開く</p></div>
-        <div class="step"><span>2</span><p>領収書を撮る・選ぶ</p></div>
-        <div class="step"><span>3</span><p>解析ボタンを押す</p></div>
-        <div class="step"><span>4</span><p>Excelをダウンロード</p></div>
+      <div class="simple-flow">
+        <div>1. 撮る・選ぶ</div>
+        <div>2. 解析ボタン</div>
+        <div>3. 結果確認</div>
+        <div>4. 追加もOK</div>
+        <div>5. Excel保存</div>
+      </div>
+
+      <div class="howto-image-grid">
+        <div class="howto-card">
+          <h3>STEP1　レシートを撮る・選ぶ</h3>
+          <p>
+            スマホならその場で撮影、または写真から選択できます。<br>
+            一度に最大10枚まで追加できます。
+          </p>
+          <img class="howto-shot" src="images/app-upload.png" alt="レシートを撮る・選ぶ画面">
+        </div>
+
+        <div class="howto-card">
+          <h3>STEP2　「解析してExcelを作成」を押す</h3>
+          <p>
+            写真を選び終えたら、解析ボタンを押します。<br>
+            AIが店名・日付・金額・区分を読み取ります。
+          </p>
+          <img class="howto-shot" src="images/app-upload.png" alt="解析ボタンの画面">
+        </div>
+
+        <div class="howto-card">
+          <h3>STEP3　結果を確認する</h3>
+          <p>
+            読み取った内容が一覧で表示されます。<br>
+            読み取り結果は必ず確認してください。
+          </p>
+          <img class="howto-shot" src="images/app-result.png" alt="解析結果画面">
+        </div>
+
+        <div class="howto-card">
+          <h3>STEP4　追加の領収書があれば続けてアップロード</h3>
+          <p>
+            追加の領収書がある場合は「続けてアップロード」でさらに追加できます。<br>
+            複数回に分けてアップロードしても、まとめてExcelにできます。
+          </p>
+          <img class="howto-shot" src="images/app-result.png" alt="続けてアップロード画面">
+          <div class="mini-note">
+            ※ 解析結果は一時保存です。必要なデータはExcelをダウンロードして保存してください。
+          </div>
+        </div>
+
+        <div class="howto-card">
+          <h3>STEP5　Excelをダウンロード</h3>
+          <p>
+            すべての領収書をまとめてExcelに出力できます。<br>
+            確定申告や経費管理に活用できます。
+          </p>
+          <img class="howto-shot" src="images/app-result.png" alt="Excelをダウンロードする画面">
+        </div>
       </div>
     </div>
   </section>
@@ -189,18 +317,23 @@
       </details>
 
       <details>
+        <summary>一度に何枚までアップロードできますか？</summary>
+        <p>現在は一度に最大10枚までアップロードできます。</p>
+      </details>
+
+      <details>
         <summary>Excelはどこに保存されますか？</summary>
         <p>端末のダウンロードフォルダに保存されます。iPhoneの場合は「ファイル」アプリ内のダウンロードに保存される場合があります。</p>
       </details>
 
       <details>
-        <summary>読み取りミスはありますか？</summary>
-        <p>あります。AIによる自動読み取りのため、Excel出力後に内容を確認してください。</p>
+        <summary>データは月末まで保存されますか？</summary>
+        <p>現在の解析結果は一時保存です。ブラウザ変更やサーバー再起動により消える場合があります。必要なデータはExcelをダウンロードして保存してください。</p>
       </details>
 
       <details>
-        <summary>領収書以外も読み取れますか？</summary>
-        <p>日付・金額・内容が書かれている出金伝票や手書きメモなども読み取れる可能性があります。ただし、正確に読み取れる保証はありません。</p>
+        <summary>読み取りミスはありますか？</summary>
+        <p>あります。AIによる自動読み取りのため、Excel出力後に内容を確認してください。</p>
       </details>
     </div>
   </section>
