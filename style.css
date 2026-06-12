@@ -737,25 +737,25 @@ details p{
 /* STEP1：ファイル選択ボタン */
 .finger-file {
   left: 35%;
-  top: 60%;
+  top: 55%;
 }
 
 /* STEP2：解析してExcelを作成ボタン */
 .finger-analyze {
-  left: 5%;
-  bottom: 10%;
+  left: 55%;
+  bottom: 5%;
 }
 
 /* STEP4：続けてアップロードボタン */
 .finger-continue {
   left: 50%;
-  bottom: -10%;
+  bottom: -5%;
 }
 
 /* STEP5：Excelをダウンロードボタン */
 .finger-excel {
   left: 50%;
-  bottom: 30%;
+  bottom: 15%;
 }
 
 @media (max-width: 900px) {
