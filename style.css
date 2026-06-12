@@ -727,30 +727,31 @@ details p{
 
 .finger {
   position: absolute;
-  font-size: 54px;
+  font-size: 44px;
   transform: rotate(-25deg);
   filter: drop-shadow(0 4px 6px rgba(0,0,0,.18));
   z-index: 3;
+  pointer-events: none;
 }
 
 .finger-file {
-  left: 8%;
-  top: 31%;
+  left: 26%;
+  top: 47%;
 }
 
 .finger-analyze {
-  left: 10%;
-  bottom: 13%;
+  left: 31%;
+  bottom: 19%;
 }
 
 .finger-continue {
-  left: 52%;
-  bottom: 13%;
+  left: 57%;
+  bottom: 18%;
 }
 
 .finger-excel {
-  left: 8%;
-  bottom: 13%;
+  left: 24%;
+  bottom: 18%;
 }
 
 @media (max-width: 900px) {
