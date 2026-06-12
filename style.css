@@ -624,3 +624,145 @@ details p{
     font-size:13px;
     color:#64748b;
 }
+.howto-section {
+  background: #f8fbff;
+}
+
+.howto-lead {
+  text-align: center;
+  color: #475569;
+  margin-top: -8px;
+  margin-bottom: 24px;
+}
+
+.howto-tabs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.howto-tabs span {
+  background: #fff;
+  border: 1px solid #cfe0ff;
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+  font-weight: 700;
+  color: #1e3a8a;
+  font-size: 14px;
+}
+
+.howto-tabs span:first-child {
+  background: #2563eb;
+  color: #fff;
+}
+
+.guide-list {
+  display: grid;
+  gap: 22px;
+}
+
+.guide-card {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 24px;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dbeafe;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.06);
+}
+
+.step-badge {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 800;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.guide-text h3 {
+  margin: 0 0 12px;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+.guide-text p {
+  color: #334155;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.guide-note {
+  margin-top: 12px !important;
+  padding: 10px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  border-radius: 8px;
+  color: #9a3412 !important;
+  font-size: 13px;
+}
+
+.guide-image-wrap {
+  position: relative;
+  background: #f8fafc;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.guide-image-wrap img {
+  display: block;
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.finger {
+  position: absolute;
+  font-size: 54px;
+  transform: rotate(-25deg);
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,.18));
+  z-index: 3;
+}
+
+.finger-file {
+  left: 8%;
+  top: 31%;
+}
+
+.finger-analyze {
+  left: 10%;
+  bottom: 13%;
+}
+
+.finger-continue {
+  left: 52%;
+  bottom: 13%;
+}
+
+.finger-excel {
+  left: 8%;
+  bottom: 13%;
+}
+
+@media (max-width: 900px) {
+  .howto-tabs {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-card {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-image-wrap img {
+    max-height: 300px;
+  }
+}
